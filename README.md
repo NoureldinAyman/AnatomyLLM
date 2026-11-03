@@ -1,10 +1,20 @@
 # AnatomyLLM
 
-Early LLM work for MediLearn, a VR anatomy tutor for medical students and my graduation project. The project won first place out of 10+ teams for best graduation project.
+LLM work for MediLearn, a VR anatomy tutor for medical students and my graduation project. The project received ITAC funding from ITIDA and won first place out of 15+ teams for best graduation project.
 
-The notebooks here cover the first stages: benchmarking candidate medical LLMs and early GRPO fine-tuning experiments with Unsloth. They include trial runs, so their numbers are not the final results.
+The notebooks here cover benchmarking candidate medical LLMs and GRPO fine-tuning experiments with Unsloth. They come from the earlier stages of the project, so their numbers differ from the final results.
 
-In the final project, Qwen2.5-Aloe-Beta-7B was fine-tuned with GRPO + LoRA. Accuracy went from 61.8% to 78.2% on our medical exam test set and from 62.1% to 71.6% on MedMCQA.
+## Final results
+
+Qwen2.5-Aloe-Beta-7B, fine-tuned with GRPO + LoRA:
+
+| Test | Before | After |
+|---|---|---|
+| Our medical exam test set | 61.8% | 78.2% |
+| MMLU-Med benchmark | 79.5% | 85.1% |
+| MedMCQA benchmark | 62.1% | 71.6% |
+
+## Notebooks
 
 - `AnatomyLLM_Base_Evaluation_5_Model.ipynb`: baseline evaluation of five models
 - `AnatomyLLM_Base_Evaluation_1_Model.ipynb`: baseline evaluation of one model
